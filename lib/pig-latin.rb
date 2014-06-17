@@ -14,6 +14,7 @@ module Pig
         word = word.slice(0,word.length-1)
       end
 
+      word = word.gsub(/[\W _]/, '')
 
       if !numbers.match(word).nil?
         return word + punctuation
