@@ -11,6 +11,7 @@ module Pig
 
       if !/\W+\z/.match(word).nil?
         punctuation = word.slice(-1,word.length)
+        word = word.slice(0,word.length-1)
       end
 
 
